@@ -1,5 +1,12 @@
 <!-- BUTTONS -->
 
+<!-- in this page content avalable following:-
+ --html basic
+ --css basic
+ --hovers , transition ,shadow
+ --margine ,padding info
+ ---->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,6 +22,23 @@
     width: 100px;
    border-radius: 4px;
    cursor: pointer;
+   transition:background-color 1s; /*change the button color smoothly*/
+
+   box-shadow:5px 2px 5px rgb(76, 76, 76); 
+   /* create a shadow on button as well as all type of box or divs.5px 2px 5px right   left  bluer */
+  
+
+}
+.subscribe-b:hover{
+   background-color: green; /*hover are used to the button  color after cursor*/
+   opacity: 0.8; /* use to faint a color*/
+
+
+   /*BOX MODEL  : margine left right top bottom:-  add a space otside the button
+
+                  padding left right top bottom:- by using padding adding the space between space inside the button or box */
+
+
 }
 .join-b{
 background-color: aliceblue;
@@ -24,15 +48,26 @@ height: 30px;
 width: 50px;
 border-radius: 4px;
 cursor: pointer;
+transition: box-shadow 10px 10px 10px 0.5;
+
+
 }
+
+.join-b:hover{
+    background-color: rgb(152, 152, 240);
+}
+
 .like-b{
-    background-color: aliceblue;
-color: cornflowerblue;
+    background-color: rgb(76, 164, 241);
+color: rgb(209, 209, 210);
 border-color:cornflowerblue;
 height: 30px;
 width: 50px;
-border-radius: 4px;
+border-radius: 50px;
 cursor: pointer;
+}
+.like-b:hover{
+    background-color: rgb(105, 105, 252);
 }
 .ancr{
   text-decoration:none;
@@ -43,7 +78,7 @@ cursor: pointer;
     </style>
 </head>
 <body>
-   <button class="subscribe-b">SUBSCRIBE</button>
+   <button class="subscribe-b">SUBSCRIBE </button>
    
    <button class="like-b">like</button>
    <br>
