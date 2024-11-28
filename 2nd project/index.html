@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vaibs zone loginForm</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome CDN link for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="title"><span>Login Vaibs Zone</span></div>
+    <form id="loginForm" action="javascript:void(0);">
+      <div class="row">
+        <i class="fas fa-user"></i>
+        <input type="text" placeholder="Email or Phone" required />
+      </div>
+      <div class="row">
+        <i class="fas fa-lock"></i>
+        <input type="password" placeholder="Password" required />
+      </div>
+      <div class="pass"><a href="#">Forgot password?</a></div>
+      <div class="row button">
+        <input type="submit" value="Login" />
+      </div>
+      <div class="signup-link">Not a member? <a href="#">Signup now</a></div>
+    </form>
+  </div>
+
+  <!-- Modal for the success message -->
+  <div id="messageModal" style="display: none; position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: rgba(232, 240, 231, 0.8); color: rgb(53, 240, 78); padding: 20px; border-radius: 10px;">
+    <h2>Successfully Added in Vaibs Zone member </h2>
+  </div>
+
+  <script>
+    document.getElementById("loginForm").addEventListener("submit", function(event) {
+      // Prevent the default form submission behavior
+      event.preventDefault();
+
+      // Display the modal message
+      document.getElementById("messageModal").style.display = "block";
+
+      // Optionally, hide the message after a few seconds
+      setTimeout(function() {
+        document.getElementById("messageModal").style.display = "none";
+      }, 3000); // Message will be displayed for 3 seconds
+    });
+  </script>
+</body>
+</html>

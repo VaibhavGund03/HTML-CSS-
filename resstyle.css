@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   background-color: #0D1B2A;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+
+    font-family: Arial, sans-serif;
+    
+}
+
+.background {
+    background: url('circuit-background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("bg_image.jpg");  background-size: cover;  background-position: center;  display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+
+}
+
+.form-container {
+    background-color: rgba(73, 56, 37, 0.1);
+   /* padding: 30px;*/
+    border-radius: 10px;
+   /* box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);*/
+    backdrop-filter: blur(10px);
+    width: 400px;
+
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo-img {
+    width: 100px;
+    height: auto;
+}
+
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+
+    align-items: center;
+   
+    position: relative;
+}
+.input-group input {
+    width: 100%;
+    padding: 10px 10px 10px 40px; /* Add padding to the left to make room for the icon */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+}
+.input-group input:focus {
+    border-color: #007BFF;
+}
+
+
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="tel"] {
+    width: 48%;
+    padding: 10px;
+    background-color: rgba(133, 228, 8, 0.2);
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="tel"]:focus {
+    border-color: #007BFF;
+}
+
+.declaration {
+    color: white;
+    font-size: 12px;
+    margin-bottom: 20px;
+
+    margin: 10px 0;
+    display: block;
+    text-align: center;
+}
+
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+
+
+}
+
+.register-btn:hover {
+ /*   background-color: #0056b3;*/
+ background-color: #0056b3;
+}
